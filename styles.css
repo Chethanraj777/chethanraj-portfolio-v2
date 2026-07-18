@@ -81,12 +81,21 @@ a{text-decoration:none;color:inherit}
 .nav-menu a:hover::after{transform:scaleX(1)}
 
 .banner{
-  position:relative;height:320px;margin-top:78px;overflow:hidden;
+  position:relative;
+  height:320px;
+  margin-top:78px;
+  overflow:hidden;
+
   background:
-    linear-gradient(180deg,rgba(5,5,5,.15),rgba(5,5,5,.82)),
+    linear-gradient(180deg,rgba(5,5,5,.35),rgba(5,5,5,.85)),
+    url("assets/images/banner.png"),
     radial-gradient(circle at 20% 20%, rgba(122,0,25,.35), transparent 25%),
     radial-gradient(circle at 80% 30%, rgba(212,175,55,.18), transparent 22%),
     linear-gradient(135deg,#070707 0%,#101010 40%,#050505 100%);
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 .banner::before{
   content:"";position:absolute;inset:0;
