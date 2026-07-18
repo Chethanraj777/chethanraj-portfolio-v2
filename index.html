@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cinematic personal brand portfolio of Chethan Raj K N — Software Developer, DevOps Engineer, and Project & Quality Manager.">
+<meta name="keywords" content="Chethan Raj K N, portfolio, software developer, devops engineer, project manager, quality manager, wordpress developer, full stack developer">
+<meta name="author" content="Chethan Raj K N">
+<meta name="theme-color" content="#050505">
+<title>CHETHAN RAJ K N | Cinematic Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<div class="loader" id="loader">
+  <div class="loader-ring"></div>
+  <p>Loading story...</p>
+</div>
+
+<header class="navbar" id="navbar">
+  <a href="#home" class="logo">CHETHAN RAJ K N</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+  <nav class="nav-menu" id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#journey">Journey</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#training">Training</a>
+    <a href="#experience">Experience</a>
+    <a href="#languages">Languages</a>
+    <a href="#interests">Interests</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="banner" aria-hidden="true">
+  <div class="banner-overlay"></div>
+  <div class="banner-grid"></div>
+</section>
+
+<main>
+  <section id="home" class="hero section">
+    <div class="hero-grid">
+      <div class="hero-image-wrap reveal fade-left">
+        <div class="profile-frame">
+          <img src="assets/images/profile.png" alt="Chethan Raj K N" class="profile-image">
+        </div>
+      </div>
+
+      <div class="hero-copy reveal fade-right">
+        <p class="eyebrow">HELLO, I AM</p>
+        <h1>CHETHAN RAJ K N</h1>
+        <div class="typewriter-wrap">
+          <span class="typewriter-label">I am a</span>
+          <span class="typewriter" id="typewriter"></span>
+        </div>
+
+        <div class="info-cards">
+          <div class="info-card glass">Date of Birth<br><strong>2001</strong></div>
+          <div class="info-card glass">Qualification<br><strong>B.E. CSE</strong></div>
+          <div class="info-card glass">Location<br><strong>Kolar, Karnataka</strong></div>
+          <div class="info-card glass">Email<br><strong>chethanraj2001kn@gmail.com</strong></div>
+          <div class="info-card glass">Phone<br><strong>9741216776</strong></div>
+        </div>
+
+        <p class="quote">“Building technology that creates real-world impact.”</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary ripple">VIEW PROJECTS</a>
+          <a href="assets/resume.pdf" class="btn btn-secondary ripple" download>DOWNLOAD RESUME</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="counters section">
+    <div class="counter-grid">
+      <div class="counter-card glass reveal counter-item">
+        <h3 data-count="10">0</h3>
+        <p>Projects</p>
+      </div>
+      <div class="counter-card glass reveal counter-item">
+        <h3 data-count="2">0</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="counter-card glass reveal counter-item">
+        <h3 data-count="15">0</h3>
+        <p>Technologies</p>
+      </div>
+      <div class="counter-card glass reveal counter-item">
+        <h3 data-count="100">0</h3>
+        <p>Dedication</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-heading reveal">
+      <p>ABOUT</p>
+      <h2>Four sides of my journey</h2>
+    </div>
+    <div class="about-grid">
+      <article class="about-card glass reveal tilt">
+        <div class="icon">⌘</div>
+        <h3>Developer</h3>
+        <p>Building responsive, modern web and backend solutions with Java, Spring Boot, JavaScript, and AWS.</p>
+      </article>
+      <article class="about-card glass reveal tilt">
+        <div class="icon">◌</div>
+        <h3>Leader</h3>
+        <p>Guiding teams, coordinating workflows, and driving quality-focused project execution.</p>
+      </article>
+      <article class="about-card glass reveal tilt">
+        <div class="icon">⚙</div>
+        <h3>Problem Solver</h3>
+        <p>Turning technical and operational challenges into practical, scalable solutions.</p>
+      </article>
+      <article class="about-card glass reveal tilt">
+        <div class="icon">✦</div>
+        <h3>Innovator</h3>
+        <p>Combining creativity, cloud thinking, and execution discipline to build meaningful products.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="section-heading reveal">
+      <p>SKILLS</p>
+      <h2>Which side of me would you like to explore?</h2>
+    </div>
+
+    <div class="skill-switch">
+      <article class="skill-panel glass reveal">
+        <button class="skill-header" data-target="developerSkills">
+          <div>
+            <span class="skill-kicker">Software Developer</span>
+            <h3>Developer</h3>
+          </div>
+          <span>+</span>
+        </button>
+        <div class="skill-body" id="developerSkills">
+          <div class="pill-list">
+            <span>Java</span><span>Spring Boot</span><span>Hibernate</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span><span>Docker</span><span>Jenkins</span><span>AWS</span><span>Git</span><span>Linux</span><span>Cloud Computing</span><span>WordPress</span><span>Responsive Design</span><span>Problem Solving</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="skill-panel glass reveal">
+        <button class="skill-header" data-target="managerSkills">
+          <div>
+            <span class="skill-kicker">Professional Manager</span>
+            <h3>Project & Quality Manager</h3>
+          </div>
+          <span>+</span>
+        </button>
+        <div class="skill-body" id="managerSkills">
+          <div class="pill-list">
+            <span>Project Management</span><span>Leadership</span><span>Quality Management</span><span>ERP</span><span>Documentation</span><span>Excel</span><span>SAP Basics</span><span>Communication</span><span>Planning</span><span>Auditing</span><span>Process Improvement</span><span>Decision Making</span><span>Time Management</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="journey" class="section">
+    <div class="section-heading reveal">
+      <p>MY JOURNEY</p>
+      <h2>From school boy to professional builder</h2>
+    </div>
+
+    <div class="journey-grid">
+      <div class="journey-side reveal fade-left">
+        <div class="journey-image glass">
+          <img src="assets/images/school-boy.png" alt="School boy illustration">
+        </div>
+      </div>
+
+      <div class="timeline-wrap">
+        <div class="timeline-line"></div>
+        <div class="timeline-item glass reveal">School</div>
+        <div class="timeline-arrow">↓</div>
+        <div class="timeline-item glass reveal">PUC</div>
+        <div class="timeline-arrow">↓</div>
+        <div class="timeline-item glass reveal">Engineering</div>
+        <div class="timeline-arrow">↓</div>
+        <div class="timeline-item glass reveal">WordPress Developer</div>
+        <div class="timeline-arrow">↓</div>
+        <div class="timeline-item glass reveal">DevOps Learning</div>
+        <div class="timeline-arrow">↓</div>
+        <div class="timeline-item glass reveal">Project & Quality Manager</div>
+        <div class="timeline-arrow">↓</div>
+        <div class="timeline-item glass reveal">Future Software Engineer</div>
+      </div>
+
+      <div class="journey-side reveal fade-right">
+        <div class="journey-image glass">
+          <img src="assets/images/professional.png" alt="Professional image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-heading reveal">
+      <p>PROJECTS</p>
+      <h2>Selected work</h2>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card glass reveal tilt">
+        <img src="assets/images/project-1.png" alt="Banking Application">
+        <div class="project-content">
+          <h3>Banking Application</h3>
+          <div class="tag-row"><span>Docker</span><span>Jenkins</span><span>Kubernetes</span></div>
+          <p>Dockerized banking app with CI/CD pipeline and Kubernetes deployment.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chethanraj777" target="_blank" rel="noopener noreferrer" class="btn btn-secondary ripple">GitHub</a>
+            <a href="#" class="btn btn-primary ripple">Live Demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass reveal tilt">
+        <img src="assets/images/project-2.png" alt="Medicure">
+        <div class="project-content">
+          <h3>Medicure</h3>
+          <div class="tag-row"><span>AWS EC2</span><span>Linux</span><span>Hosting</span></div>
+          <p>Cloud deployment project hosted on AWS EC2 Linux server.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chethanraj777" target="_blank" rel="noopener noreferrer" class="btn btn-secondary ripple">GitHub</a>
+            <a href="#" class="btn btn-primary ripple">Live Demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass reveal tilt">
+        <img src="assets/images/project-3.png" alt="Insure Me">
+        <div class="project-content">
+          <h3>Insure Me</h3>
+          <div class="tag-row"><span>Spring Boot</span><span>Jenkins</span><span>Git</span></div>
+          <p>Backend system with CI/CD and structured version control.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chethanraj777" target="_blank" rel="noopener noreferrer" class="btn btn-secondary ripple">GitHub</a>
+            <a href="#" class="btn btn-primary ripple">Live Demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass reveal tilt">
+        <img src="assets/images/project-4.png" alt="Facial Expression Recognition">
+        <div class="project-content">
+          <h3>Facial Expression Recognition</h3>
+          <div class="tag-row"><span>CNN</span><span>Haar Cascade</span><span>ML</span></div>
+          <p>Real-time emotion detection using CNN and Haar Cascade.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chethanraj777" target="_blank" rel="noopener noreferrer" class="btn btn-secondary ripple">GitHub</a>
+            <a href="#" class="btn btn-primary ripple">Live Demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass reveal tilt">
+        <img src="assets/images/project-5.png" alt="Netflix Clone">
+        <div class="project-content">
+          <h3>Netflix Clone</h3>
+          <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <p>Frontend recreation focused on UI precision and responsiveness.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chethanraj777" target="_blank" rel="noopener noreferrer" class="btn btn-secondary ripple">GitHub</a>
+            <a href="#" class="btn btn-primary ripple">Live Demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass reveal tilt">
+        <img src="assets/images/project-6.png" alt="To Do App">
+        <div class="project-content">
+          <h3>To Do App</h3>
+          <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <p>Minimal productivity app with a clean interaction pattern.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chethanraj777" target="_blank" rel="noopener noreferrer" class="btn btn-secondary ripple">GitHub</a>
+            <a href="#" class="btn btn-primary ripple">Live Demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass reveal tilt">
+        <img src="assets/images/project-7.png" alt="Address Book">
+        <div class="project-content">
+          <h3>Address Book</h3>
+          <div class="tag-row"><span>Java</span><span>MySQL</span></div>
+          <p>Data management app built with backend logic and persistence.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chethanraj777" target="_blank" rel="noopener noreferrer" class="btn btn-secondary ripple">GitHub</a>
+            <a href="#" class="btn btn-primary ripple">Live Demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass reveal tilt">
+        <img src="assets/images/project-8.png" alt="Portfolio">
+        <div class="project-content">
+          <h3>Portfolio</h3>
+          <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <p>This cinematic storytelling experience.</p>
+          <div class="project-actions">
+            <a href="https://github.com/Chethanraj777" target="_blank" rel="noopener noreferrer" class="btn btn-secondary ripple">GitHub</a>
+            <a href="#" class="btn btn-primary ripple">Live Demo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="achievements" class="section">
+    <div class="section-heading reveal">
+      <p>ACHIEVEMENTS</p>
+      <h2>Milestones that shaped the path</h2>
+    </div>
+    <div class="achievement-grid">
+      <div class="achievement-card glass reveal">Campus Selected</div>
+      <div class="achievement-card glass reveal">10+ Projects</div>
+      <div class="achievement-card glass reveal">CGPA 8.27</div>
+      <div class="achievement-card glass reveal">Project Leadership</div>
+      <div class="achievement-card glass reveal">DevOps Training</div>
+      <div class="achievement-card glass reveal">Quality Management</div>
+    </div>
+  </section>
+
+  <section id="training" class="section">
+    <div class="section-heading reveal">
+      <p>TRAINING</p>
+      <h2>Certifications</h2>
+    </div>
+    <div class="training-grid">
+      <article class="training-card glass reveal">StarAgile<br><strong>DevOps & AWS</strong></article>
+      <article class="training-card glass reveal">Tap Academy<br><strong>Java Full Stack</strong></article>
+      <article class="training-card glass reveal">Anudip Foundation<br><strong>Full Stack Development</strong></article>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="section-heading reveal">
+      <p>EXPERIENCE</p>
+      <h2>Professional timeline</h2>
+    </div>
+    <div class="experience-timeline">
+      <article class="experience-card glass reveal">
+        <h3>WordPress Developer</h3>
+        <p>Bharat Times • Nov 2023 – Jan 2024</p>
+      </article>
+      <article class="experience-card glass reveal">
+        <h3>Project & Quality Manager</h3>
+        <p>Tensil Lab Technologies • June 2024 – Present</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="languages" class="section">
+    <div class="section-heading reveal">
+      <p>LANGUAGES</p>
+      <h2>Communication</h2>
+    </div>
+    <div class="chip-grid">
+      <span class="chip glass reveal">Kannada</span>
+      <span class="chip glass reveal">English</span>
+      <span class="chip glass reveal">Hindi</span>
+      <span class="chip glass reveal">Telugu</span>
+      <span class="chip glass reveal">Tamil</span>
+      <span class="chip glass reveal">Malayalam</span>
+    </div>
+  </section>
+
+  <section id="interests" class="section">
+    <div class="section-heading reveal">
+      <p>INTERESTS</p>
+      <h2>Creative energy</h2>
+    </div>
+    <div class="chip-grid">
+      <span class="chip glass reveal">Photography</span>
+      <span class="chip glass reveal">Sketching</span>
+      <span class="chip glass reveal">Sports</span>
+      <span class="chip glass reveal">Creative Writing</span>
+      <span class="chip glass reveal">Public Speaking</span>
+      <span class="chip glass reveal">Singing</span>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-heading reveal">
+      <p>READY TO BUILD SOMETHING AMAZING TOGETHER?</p>
+      <h2>Let's discuss your next opportunity.</h2>
+    </div>
+    <div class="contact-grid">
+      <article class="contact-card glass reveal">
+        <h3>Email</h3>
+        <a href="mailto:chethanraj2001kn@gmail.com">chethanraj2001kn@gmail.com</a>
+      </article>
+      <article class="contact-card glass reveal">
+        <h3>Phone</h3>
+        <a href="tel:9741216776">9741216776</a>
+      </article>
+      <article class="contact-card glass reveal">
+        <h3>GitHub</h3>
+        <a href="https://github.com/Chethanraj777" target="_blank" rel="noopener noreferrer">github.com/Chethanraj777</a>
+      </article>
+      <article class="contact-card glass reveal">
+        <h3>LinkedIn</h3>
+        <a href="https://linkedin.com/in/chethan-raj-k-n-aa32a8247" target="_blank" rel="noopener noreferrer">linkedin.com/in/chethan-raj-k-n-aa32a8247</a>
+      </article>
+      <article class="contact-card glass reveal">
+        <h3>Location</h3>
+        <p>Kolar, Karnataka, India</p>
+      </article>
+      <article class="contact-card glass reveal">
+        <h3>Buttons</h3>
+        <div class="project-actions">
+          <a href="mailto:chethanraj2001kn@gmail.com" class="btn btn-primary ripple">Send Message</a>
+          <a href="assets/resume.pdf" class="btn btn-secondary ripple" download>Download Resume</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Designed & Developed by <strong>CHETHAN RAJ K N</strong> <span class="heart">♥</span> <span id="year"></span></p>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
